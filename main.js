@@ -15,36 +15,79 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
+const num2String = (num) => {
+  return num.toString();
+}
+
 
 
 
 // Write a JavaScript program to convert a string to the number.
-
+const string2Num = (string) => {
+  return string.toNum();
+}
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
+  Boolean(19 > 6)        // returns true
   // * Null
-  // * Undefined
-  // * Number
-  // * NaN
-  // * String
+  var a = null;
+  document.write(a + "<br>"); // Print: null
   
+  var b = "Apple Sauce!"
+  document.write(b + "<br>"); // Print: Apple Sauce!
+  
+  b = null;
+  document.write(b) // Print: null
+  // * Undefined
+  var x;
 
+  if (typeof x === "undefined") {
+    txt = "x is undefined";
+  } else {
+    txt = "x is defined";
+  }
+  // * Number
+  var a = 25;         // integer
+  var b = 80.5;       // floating-point number
+  var c = 4.25e+6;    // exponential notation, same as 4.25e6 or 4250000
+  var d = 4.25e-6;    // exponential notation, same as 0.00000425
+  // * NaN
+
+  // * String
+  var a = 'Apple Sauce!';  // using single quotes
+  
+  // write a function that takes a variable that is dataype
+  // return the type of that variable - using the 'typeof' operator 
+  
+  typeof 60;  // Returns: "number"
   
 // Write a JavaScript program that adds 2 numbers together.
 
+const add = (num1, num2) => {
+  return num1 + num2
+}
 
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+var Truthytruth = false;
+Truthytruth = true;
+Truthytruth;
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
-
+var Truthytruth = truth;
+Truthytruth = truth;
+Truthytruth;
 
 // Write a JavaScript program that runs when both things are not true.  
+
+var Truthytruth = truth;
+Truthytruth = false;
+Truthytruth;
 
 // ***************************
 //         PART TWO
